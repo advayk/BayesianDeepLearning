@@ -27,22 +27,7 @@ We aimed to reproduce the negative log likelihood performance of Deep Ensembles,
    - matplotlib
 
 2. **Instructions**:
-   # Clone the repository
-   git clone https://github.com/your-repo/cs4782-final-project.git
-   cd cs4782-final-project
-
-   # Create a virtual environment
-   python3 -m venv venv
-   source venv/bin/activate
-
-   # Install dependencies
-   pip install -r requirements.txt
-
-   # Run training script
-   python train.py --model ResNet18 --dataset CIFAR-10 --epochs 100
-
-   # Evaluate performance
-   python evaluate.py --model ResNet18 --dataset CIFAR-10 --blur_level light
+   See SWAG.ipynb and run all the cells. 
 
 ### Computational Resources
 
