@@ -50,7 +50,7 @@ The re-implementation showed the following results:
 - **Deep Ensembles**: Provided robustness but were outperformed by MultiSWAG in terms of capturing uncertainty.
 
 <div style="text-align: center;">
-  <img src="results/re-implementation_deep_ensembles_vs_multiSWAG.png" alt="Deep Ensembles vs MultiSWAG" style="width: 50%;">
+  <img src="results/re-implementation_deep_ensembles_vs_multiSWAG.png" alt="Deep Ensembles vs MultiSWAG" style="width: 30%;">
   <p><em>Figure 2: Our re-implementation of the comparative performance of Deep Ensembles, MultiSWAG, and MultiSWA under varying Gaussian blur corruption on CIFAR-10.</em></p>
 </div>
 
