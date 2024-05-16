@@ -8,6 +8,8 @@ This project is a re-implementation of the paper titled "Bayesian Deep Learning 
 
 We aimed to reproduce the negative log likelihood performance of Deep Ensembles, MultiSWAG, and MultiSWA on the CIFAR-10 dataset under varying intensities of Gaussian blur corruption. This result demonstrates the effectiveness of MultiSWAG in capturing uncertainty and improving generalization compared to traditional deep ensembles. The relevant figure from the original paper illustrates the comparative performance of these methods under different conditions of data corruption.
 
+![Deep Ensembles vs MultiSWAG](results/deep_ensembles_vs_multiSWAG.png)
+
 ## 3.3 Re-implementation Details
 
 ### Approach
