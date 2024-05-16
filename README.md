@@ -49,6 +49,11 @@ The re-implementation showed the following results:
 - **MultiSWAG**: Achieved the best performance in terms of negative log likelihood under varying Gaussian blur intensities.
 - **Deep Ensembles**: Provided robustness but were outperformed by MultiSWAG in terms of capturing uncertainty.
 
+<div style="text-align: center;">
+  <img src="results/re-implementation_deep_ensembles_vs_multiSWAG.png" alt="Deep Ensembles vs MultiSWAG" style="width: 50%;">
+  <p><em>Figure 2: Our re-implementation of the comparative performance of Deep Ensembles, MultiSWAG, and MultiSWA under varying Gaussian blur corruption on CIFAR-10.</em></p>
+</div>
+
 ### Discrepancies and Challenges
 
 - **Discrepancies**: There were minor differences in scaling for negative log likelihood compared to the original paper. This was hypothesized to be due to variations in hyperparameter settings and computational constraints.
