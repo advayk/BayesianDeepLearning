@@ -1,5 +1,6 @@
 # Bayesian Deep Learning and a Probabilistic Perspective of Generalization
 
+Advay Koranne (ak845) and Duncan Jurman(dj383). Cornell University CS 4782: Intro to Deep Learning. 
 ## 3.1 Introduction
 
 This project is a re-implementation of the paper titled "Bayesian Deep Learning and a Probabilistic Perspective of Generalization" by Andrew Gordon Wilson and Pavel Izmailov, presented at NeurIPS 2020. The main contribution of the paper is the introduction of Bayesian marginalization in deep neural networks to improve accuracy and calibration. The method emphasizes using multiple weight configurations, further enhanced by Stochastic Weight Averaging-Gaussian (SWAG) to improve predictive distributions.
