@@ -3,7 +3,26 @@
 Advay Koranne (ak845) and Duncan Jurman(dj383). Cornell University CS 4782: Intro to Deep Learning. 
 ## 3.1 Introduction
 
-This project is a re-implementation of the paper titled "Bayesian Deep Learning and a Probabilistic Perspective of Generalization" by Andrew Gordon Wilson and Pavel Izmailov, presented at NeurIPS 2020. The main contribution of the paper is the introduction of Bayesian marginalization in deep neural networks to improve accuracy and calibration. The method emphasizes using multiple weight configurations, further enhanced by Stochastic Weight Averaging-Gaussian (SWAG) to improve predictive distributions.
+
+### Overview
+This project is a re-implementation of the paper **"Bayesian Deep Learning and a Probabilistic Perspective of Generalization"** by Andrew Gordon Wilson and Pavel Izmailov, presented at NeurIPS 2020. The primary contribution of the paper is the introduction of Bayesian marginalization in deep neural networks to improve accuracy and calibration. The method emphasizes using multiple weight configurations, further enhanced by Stochastic Weight Averaging-Gaussian (SWAG) to improve predictive distributions. The paper particularly focuses on training methods like SGD, SWA, SWAG, and the novel MultiSWAG model.
+
+### Background and Motivation
+1. **Bayesian Marginalization**: Used in deep neural networks to improve accuracy and calibration by considering multiple weight configurations rather than just one.
+2. **Deep Ensembles**: Effective at approximating Bayesian marginalization, the proposed method further enhances predictive distributions by marginalizing within attraction basins without significant extra cost.
+3. **SWAG (Stochastic Weight Averaging-Gaussian)**: Extends the ensemble method by approximating the posterior distribution of weights with a Gaussian. 
+
+### Method: Bayesian Model Averaging (BMA)
+\[ p(y \mid x, \mathcal{D}) = \int p(y \mid x, w) p(w \mid \mathcal{D}) \, dw \]
+
+### Variables
+- **Output ($y$)**: Output values (e.g., regression values, class labels)
+- **Inputs ($x$)**: Input data (e.g., spatial locations, images)
+- **Weights ($w$)**: Model parameters
+- **Data ($\mathcal{D}$)**: Training data
+
+### Explanation
+The equation above represents the Bayesian model average (BMA). Instead of relying on a single hypothesis, i.e., one set of parameters $w$, Bayesian inference uses all possible sets of parameters, each weighted by their posterior probability, to compute predictions.
 
 ## 3.2 Chosen Result
 
