@@ -13,7 +13,7 @@ This project is a re-implementation of the paper **"Bayesian Deep Learning and a
 3. **SWAG (Stochastic Weight Averaging-Gaussian)**: Extends the ensemble method by approximating the posterior distribution of weights with a Gaussian. 
 
 ### Method: Bayesian Model Averaging (BMA)
-\[ p(y \mid x, \mathcal{D}) = \int p(y \mid x, w) p(w \mid \mathcal{D}) \, dw \]
+$\[ p(y \mid x, \mathcal{D}) = \int p(y \mid x, w) p(w \mid \mathcal{D}) \, dw \]$
 
 ### Variables
 - **Output ($y$)**: Output values (e.g., regression values, class labels)
