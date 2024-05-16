@@ -106,7 +106,7 @@ Our results align with the paper's findings that Bayesian approaches, especially
 
 ### Key Takeaways
 
-- Bayesian Deep Learning offers a robust framework for improving model generalization and uncertainty estimation.
+- Bayesian Deep Learning offers a robust framework for improving model generalization and uncertainty estimation. 
 - MultiSWAG is an effective method for approximating Bayesian model averaging without significant computational overhead.
 
 ### Future Directions
