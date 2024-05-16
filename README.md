@@ -71,7 +71,7 @@ We aimed to reproduce the negative log likelihood performance of Deep Ensembles,
 ### Computational Resources
 
 - GPU is highly recommended for training due to the computational intensity of deep learning models.
-- The implementation was tested on NVIDIA GTX 1080 Ti.
+- The implementation was tested on NVIDIA T4 GPU
 
 ## 3.4 Results and Analysis
 
