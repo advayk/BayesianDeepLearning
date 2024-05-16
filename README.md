@@ -77,6 +77,12 @@ We aimed to reproduce the negative log likelihood performance of Deep Ensembles,
 
 ### Re-implementation Results
 
+For our re-implementation we implemented SWAG. Furthermore, the paper described how the blurring for multiple different blur levels but we decided on using the CIFAR-10 data set in PyTorch Torchvision and manually blur the images using a GaussianBlur where:
+Light: sigma=0.5
+Medium: sigma=1
+Heavy: sigma = 2.0
+The paper used PreResNet-20 but we decided on using resnet18 for simplicity and efficienty. We used the Negative Log-Likelihood (NLL) to benchmark the performance of MultiSWAG and Deep Ensembles. NLL computes the loss between model outputs and true labels by converting the labels to integers and using them to index into the outputs to get the predicted probabilities. It then calculates the negative log-likelihood by summing the logarithms of these probabilities and returns the result.
+
 The re-implementation showed the following results:
 
 - **MultiSWAG**: Achieved the best performance in terms of negative log likelihood under varying Gaussian blur intensities.
@@ -89,12 +95,12 @@ The re-implementation showed the following results:
 
 ### Discrepancies and Challenges
 
-- **Discrepancies**: There were minor differences in scaling for negative log likelihood compared to the original paper. This was hypothesized to be due to variations in hyperparameter settings and computational constraints.
-- **Challenges**: Implementing SWAG was the most challenging aspect due to its complexity and the need for precise tuning.
+- **Discrepancies**: There were minor differences in scaling for negative log likelihood compared to the original paper. This was hypothesized to be due to variations in hyperparameter settings and computational constraints. Another reason why the NLL values could be different is because we used just three general blur levels of (light, medium, and heavy) rather than the papers 5 different blur levels. 
+- **Challenges**: One of the hardest parts of this paper was understaynding the idea of Bayesian Model Averaging and how that is similar to ensembeling. Furthermore, implementing SWAG was the most challenging aspect due to its complexity and the need for precise tuning.
 
 ### Analysis
 
-Our results align with the paper's findings that Bayesian approaches, especially MultiSWAG, provide superior generalization by effectively capturing model uncertainty. This is crucial in real-world applications where uncertainty estimation can significantly impact decision-making.
+Our results align with the paper's findings that Bayesian approaches, especially MultiSWAG, provide superior generalization by effectively capturing model uncertainty. This is crucial in real-world applications where uncertainty estimation can significantly impact decision-making. Looking at the plots in Figure 2 of our re-implementation we can clearly see that MultiSWAG outperformed Deep Ensembles under varying Gaussian blur corruption on CIFAR-10. However, one of the differefnces in our re-implementatoni was that it seems to be the case that for all the different blur levels in the original paper that MultiSWAG out peforms but in our re-impelementation is seems to be the case that for light blurring that Deep Ensemebles outperform for all number of models and that for 1-2 model senembling in medium and heavy blurring that DeepEnsenebles outperform. However, for both medium and heavy blurring we can see clearly that if we enemble more than two models MultiSWAG siginiflcay out performs Deep Ensembles which verifies the results in the paper. 
 
 ## 3.5 Conclusion and Future Work
 
