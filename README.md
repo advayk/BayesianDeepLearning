@@ -37,18 +37,6 @@ SWAG, which stands for **Stochastic Weight Averaging-Gaussian**, is a method use
 3. MultiSWAG, like ensembling, achieves Bayesian model averaging by leveraging diverse models to capture and quantify uncertainty.
 4. MultiSWAG provides a computationally efficient approach to explore the model space and obtain a more comprehensive estimation of uncertainty.
 
-<p align="center">
-    \( 
-    p(y \mid x, \mathcal{D}) = 
-    \underbrace{\int}_{\text{\scriptsize Sum over ensemble}} 
-    \quad 
-    \underbrace{p(y \mid x, w)}_{\text{\scriptsize Model predictions}} 
-    \quad 
-    \underbrace{p(w \mid \mathcal{D}) \, dw}_{\text{\scriptsize SWAG Gaussian approximation}} 
-    \)
-</p>
-
-
 ## 3.2 Chosen Result
 
 We aimed to reproduce the negative log likelihood performance of Deep Ensembles, MultiSWAG, and MultiSWA on the CIFAR-10 dataset under varying intensities of Gaussian blur corruption. This result demonstrates the effectiveness of MultiSWAG in capturing uncertainty and improving generalization compared to traditional deep ensembles. The relevant figure from the original paper illustrates the comparative performance of these methods under different conditions of data corruption.
