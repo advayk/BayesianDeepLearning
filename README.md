@@ -37,12 +37,15 @@ SWAG, which stands for **Stochastic Weight Averaging-Gaussian**, is a method use
 3. MultiSWAG, like ensembling, achieves Bayesian model averaging by leveraging diverse models to capture and quantify uncertainty.
 4. MultiSWAG provides a computationally efficient approach to explore the model space and obtain a more comprehensive estimation of uncertainty.
 
-$p(y \mid x, \mathcal{D}) = 
+\[ 
+p(y \mid x, \mathcal{D}) = 
 \underbrace{\int}_{\text{\scriptsize Sum over ensemble}} 
 \quad 
 \underbrace{p(y \mid x, w)}_{\text{\scriptsize Model predictions}} 
 \quad 
-\underbrace{p(w \mid \mathcal{D}) \, dw}_{\text{\scriptsize SWAG Gaussian approximation}}$
+\underbrace{p(w \mid \mathcal{D}) \, dw}_{\text{\scriptsize SWAG Gaussian approximation}} 
+\]
+
 
 ## 3.2 Chosen Result
 
