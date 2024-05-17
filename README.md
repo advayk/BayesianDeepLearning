@@ -81,7 +81,7 @@ For our re-implementation we implemented SWAG. Furthermore, the paper described 
 Light: sigma=0.5
 Medium: sigma=1
 Heavy: sigma = 2.0
-The paper used PreResNet-20 but we decided on using resnet18 for simplicity and efficienty. We used the Negative Log-Likelihood (NLL) to benchmark the performance of MultiSWAG and Deep Ensembles. NLL computes the loss between model outputs and true labels by converting the labels to integers and using them to index into the outputs to get the predicted probabilities. It then calculates the negative log-likelihood by summing the logarithms of these probabilities and returns the result.
+The paper used PreResNet-20 but we decided on using resnet18 for simplicity and efficiency. We used the Negative Log-Likelihood (NLL) to benchmark the performance of MultiSWAG and Deep Ensembles. NLL computes the loss between model outputs and true labels by converting the labels to integers and using them to index into the outputs to get the predicted probabilities. It then calculates the negative log-likelihood by summing the logarithms of these probabilities and returns the result.
 
 The re-implementation showed the following results:
 
