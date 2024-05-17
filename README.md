@@ -111,7 +111,7 @@ Our results align with the paper's findings that Bayesian approaches, especially
 
 ### Future Directions
 
-- **Scalability**: Explore scalable implementations for larger datasets and deeper models.
+- **Scalability**: Explore scalable implementations for larger datasets and deeper models. We could also explore using methods similar to SWAG but with a distribution other than the gaussian as well. 
 - **Extensions**: Investigate other forms of Bayesian approximations and their impact on different types of neural network architectures.
 
 ## 3.6 References
